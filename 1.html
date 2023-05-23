@@ -1,0 +1,43 @@
+<script type="text/javascript">
+
+    var physics = parseInt(prompt("Enter the marks of Physics : "));
+    var chemistry = parseInt(prompt("Enter the marks of Chemistry : "));
+    var biology = parseInt(prompt("Enter the marks of Biology : "));
+    var mathematics = parseInt(prompt("Enter the marks of Mathematics : "));
+    var computer = parseInt(prompt("Enter the marks of Computer : "));
+
+    class demo {
+        constructor(physics, chemistry, biology, mathematics, computer) {
+            this.phy = physics;
+            this.che = chemistry;
+            this.bio = biology;
+            this.mat = mathematics;
+            this.com = computer;
+        }
+
+        per(){
+            let total = this.physics + this.chemistry + this.biology + this.mathematics + this.computer;
+            var percentage = (total*100) / 500;
+          
+            if (percentage >= 90) {
+                document.write("You have A Grade");
+            } else if (percentage >= 80) {
+                document.write("You have B Grade");
+            } else if (percentage >= 70) {
+                document.write("You have C Grade");
+            } else if (percentage >= 60) {
+                document.write("You have D Grade");
+            } else if (percentage >= 50) {
+                document.write("You have E Grade");
+            } else if (percentage >= 40) {
+                document.write("You have F Grade");
+            } else {
+                document.write("You are Fail");
+            }
+        }
+    }
+
+    var study = new demo(physics,chemistry,biology,mathematics,computer);
+    study.per();
+    
+</script>

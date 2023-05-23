@@ -1,0 +1,50 @@
+<table border="2">
+    <tr>
+        <td>name</td>
+        <td>email</td>
+        <td>phone</td>
+    </tr>
+    <tbody id="record"></tbody>
+</table>
+
+<script type="text/javascript">
+
+    
+
+    var tbl = " ";
+
+    class work {
+        constructor(name,email,phone){
+           this.name = name;
+           this.email = email;
+           this.phone = phone;
+        }
+        save = () => {
+
+            tbl += `
+                    <tr>
+                        <td>${this.name}</td>
+                        <td>${this.email}</td>
+                        <td>${this.phone}</td>
+                    </tr>
+                   `
+                   document.getElementById('record').innerHTML = tbl;
+        }
+        
+    }
+    
+
+
+   
+    var work1 = new work ("jay","jay@gmail.com", "12345");
+    work1.save()
+    var work2 = new work ("ajay","ajay@gmail.com", "12345");
+    work2.save()
+    var work3 = new work ("vijay","vijay@gmail.com", "12345");
+    work3.save()
+    var work4 = new work ("ashish","ashish@gmail.com", "12345");
+    work4.save()
+    
+    
+
+</script>

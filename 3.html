@@ -1,0 +1,22 @@
+<script type="text/javascript">
+
+    var no = parseInt(prompt("enter the any Number : "));
+
+    class data {
+        constructor(no) {
+            this.num = no;
+        }
+
+        btable() {
+            var i = 0;
+            do{
+                document.write("<p>"+this.num+" * "+i+" = "+(i * this.num)+"</p>");
+                i++;
+            }while(i<=10);
+        }
+    }
+
+    var mul = new data(no);
+    mul.btable();
+    
+</script>
